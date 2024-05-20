@@ -8,7 +8,7 @@ package OPP_day15;
     //override: a methode in parent class create the same method in child class with same declaration (name ,parameters) but different implementation (body)
     // related to inheritance
     // can not apply with same class must have two or more classes (inheritance)
-    // must apply with inheritance
+    // must apply only with inheritance
 
 
 class A{
@@ -21,14 +21,14 @@ class B extends A {
 
     void m1(int a){                 // overriding
         System.out.println(a*a);
-    }
+    }    // overriding
 }
 
 class C extends A{
 
     void m1(int a ,int b) {         // overloading
         System.out.println(a+b);
-    }
+    }    // overloading
 }
 
 
@@ -39,8 +39,9 @@ public class OverloadingVSOverriding {
         B objB=new B();             // objB have one method from parent A
         objB.m1(100);
 
-        C objC = new C();           // objC have two method one from parent A and another from owb (overloading methode)
-        objC.m1(100+200);
-        objC.m1(100);
+        C objC = new C();           // objC have two method one from parent A and another from his own (overloading methode)
+
+        objC.m1(100+200);       // from his own (overloading methode)
+        objC.m1(100);           // from parent A class
     }
 }
