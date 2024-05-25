@@ -1,5 +1,9 @@
 package day17;
 
+import day6.Array;
+
+import java.util.ArrayList;
+
 public class WrapperClass {
 
     public static void main(String[]args){
@@ -34,5 +38,27 @@ public class WrapperClass {
         System.out.println(Boolean.parseBoolean(b2));
         System.out.println(Boolean.parseBoolean(b3));
         // note : String b1="welcome"; any_thing than "true" will return false as is default value of Boolean.parseBoolean
+
+        //4-convert String to char    >>> Not possible
+
+        //*-convert any primitive data to String use String.valueOf();
+        int x=100;
+        double d=10.5;
+        boolean b=true;
+        char c ='A';
+
+        System.out.println(String.valueOf(x));
+        System.out.println(String.valueOf(d));
+        System.out.println(String.valueOf(b));
+        System.out.println(String.valueOf(c));
+
+        //*-convert any collection data to primitive data
+
+        ArrayList<Integer>arr=new ArrayList<Integer>();     //Convert to integer
+        ArrayList<Boolean>arr1=new ArrayList<Boolean>();    //Convert to Boolean
+
+
+
+
     }
 }
