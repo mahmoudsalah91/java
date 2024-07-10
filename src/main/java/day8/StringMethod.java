@@ -67,6 +67,13 @@ public class StringMethod {
         System.out.println(k.substring(0,5));
         System.out.println(k.substring(1,5));
 
+        // 7-extract number of page from string
+        String text = "Showing 1 to 10 of 2815 (282 Pages)";
+        String pages=text.substring(text.indexOf("(")+1,text.indexOf("Pages")-1);
+        System.out.println(pages);
+        int totalPages = Integer.parseInt(pages);  // convert String to integer using Wrapper class
+        System.out.println(totalPages);
+
         // 8- toUpperCase  toLowerCase
         System.out.println(s.toUpperCase());
         System.out.println(s.toLowerCase());
